@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6fb;
+    color: #222;
+    min-height: 100vh;
+    padding: 30px 15px;
+}
+
+.container {
+    max-width: 750px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+h1 span {
+    background: yellow;
+    padding: 3px 6px;
+}
+
+.calculator {
+    max-width: 430px;
+    margin: auto;
+    padding: 25px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.screen {
+    background: #22244e;
+    color: white;
+    padding: 22px;
+    border-radius: 12px;
+    margin-bottom: 22px;
+    text-align: right;
+}
+
+.screen p {
+    font-size: 13px;
+    color: #d6d7f4;
+    margin-bottom: 10px;
+}
+
+.screen h2 {
+    font-size: 30px;
+    overflow-wrap: anywhere;
+    color: #ffcc66;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 13px 0 7px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+    background: white;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #5555cc;
+    border-color: transparent;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 15px;
+    background: #4141b5;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #30308f;
+}
+
+button.reset {
+    margin-top: 9px;
+    background: #e8e8ee;
+    color: #222;
+}
+
+button.reset:hover {
+    background: #d7d7e0;
+}
+
+.output {
+    margin-top: 22px;
+    padding: 16px;
+    background: #f4f6fb;
+    border-radius: 10px;
+}
+
+.output p {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.output strong {
+    text-align: right;
+    overflow-wrap: anywhere;
+}
+
+#interest {
+    color: #168447;
+}
+
+footer {
+    margin-top: 25px;
+    font-size: 13px;
+    color: #777;
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 23px;
+    }
+
+    .calculator {
+        padding: 18px;
+    }
+
+    .screen h2 {
+        font-size: 25px;
+    }
+}

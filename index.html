@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compound Interest Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1><span>Task:</span> JavaScript - Compound Interest Calculation</h1>
+
+        <div class="calculator">
+            <div class="screen">
+                <p>Compound Interest Calculator</p>
+                <h2 id="result">₹ 0.00</h2>
+            </div>
+
+            <form id="interestForm">
+                <label for="principal">Principal Amount (₹)</label>
+                <input type="number" id="principal" value="100000" min="0" step="any" placeholder="Enter principal amount" required>
+
+                <label for="rate">Annual Interest Rate (%)</label>
+                <input type="number" id="rate" value="10" min="0" step="any" placeholder="Enter interest rate" required>
+
+                <label for="time">Time (Years)</label>
+                <input type="number" id="time" value="3" min="0" step="any" placeholder="Enter time in years" required>
+
+                <label for="frequency">Compounding Frequency</label>
+                <select id="frequency">
+                    <option value="1">Yearly</option>
+                    <option value="2">Half-Yearly</option>
+                    <option value="4">Quarterly</option>
+                    <option value="12" selected>Monthly</option>
+                    <option value="365">Daily</option>
+                </select>
+
+                <button type="submit">Calculate Interest</button>
+                <button type="reset" class="reset">Reset</button>
+            </form>
+
+            <div class="output">
+                <p>Total Amount: <strong id="amount">₹ 0.00</strong></p>
+                <p>Principal: <strong id="principalResult">₹ 0.00</strong></p>
+                <p>Compound Interest: <strong id="interest">₹ 0.00</strong></p>
+            </div>
+        </div>
+
+        <footer>Made with HTML, CSS & JavaScript</footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
